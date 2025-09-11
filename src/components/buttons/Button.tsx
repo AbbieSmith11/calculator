@@ -1,11 +1,8 @@
 type ButtonProps = {
-    number: number;
-}
+  label: string | number;
+  onClick: (value: string | number) => void;
+};
 
-export default function Button ({number}: ButtonProps) {
-
-
-    return (
-        <button>{number}</button>
-    )
+export default function Button({ label, onClick }: ButtonProps) {
+  return <button onClick={() => onClick(label)}>{label}</button>;
 }

@@ -1,5 +1,5 @@
-import './App.css'
-import Calculator from './components/calculator/calculator.tsx'
+import './App.css';
+import Calculator from './components/calculator/Calculator.tsx';
 
 export default function App() {
   
@@ -9,4 +9,4 @@ export default function App() {
     <Calculator/>
     </>
   )
-}
+};

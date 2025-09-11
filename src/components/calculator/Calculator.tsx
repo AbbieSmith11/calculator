@@ -19,6 +19,7 @@ export default function Calculator(){
     setDisplay(display + value.toString());
   };
 
+// calculater
   const handleEquals = () => {
     try {
         const result = new Function (`'use strict'; return (${display})`)();
@@ -30,31 +31,44 @@ export default function Calculator(){
   }
 
   return (
-    <section>
-      <div>
-        <p>{display || '0'}</p>
-      </div>
-      <div>
-        <Button label={1} onClick={handleClick} />
-        <Button label={2} onClick={handleClick} />
-        <Button label={3} onClick={handleClick} />
-        <Button label={4} onClick={handleClick} />
-        <Button label={5} onClick={handleClick} />
-        <Button label={6} onClick={handleClick} />
-        <Button label={7} onClick={handleClick} />
-        <Button label={8} onClick={handleClick} />
-        <Button label={9} onClick={handleClick} />
-      </div>
-      <div>
-        <Button label={"+"} onClick={handleClick}></Button>
-        <Button label={"-"} onClick={handleClick}></Button>
-        <Button label={"%"} onClick={handleClick}></Button>
-        <Button label={"*"} onClick={handleClick}></Button>
-        <Button label={"/"} onClick={handleClick}></Button>
-        <Button label={"."} onClick={handleClick}></Button>
-        <Button label={"C"} onClick={handleClick}></Button>
-        <Button label={"="} onClick={handleClick}></Button>
-      </div>
-    </section>
+    <section className="flex flex-col items-center justify-center bg-pink-100 p-6 rounded-2xl shadow-xl">
+  <div className="mb-6 w-[250px] bg-white rounded-xl shadow-inner">
+    <h1 className="text-right text-3xl font-mono p-4">{display || '0'}</h1>
+  </div>
+
+  <div className="flex flex-row space-x-4">
+
+    {/* Numbers */}
+    <div className="grid grid-cols-3 gap-4">
+      <Button label={0} onClick={handleClick} color='pink'/>
+      <Button label={1} onClick={handleClick} color='pink'/>
+      <Button label={2} onClick={handleClick} color='pink'/>
+      <Button label={3} onClick={handleClick} color='pink'/>
+      <Button label={4} onClick={handleClick} color='pink'/>
+      <Button label={5} onClick={handleClick} color='pink'/>
+      <Button label={6} onClick={handleClick} color='pink'/>
+      <Button label={7} onClick={handleClick} color='pink'/>
+      <Button label={8} onClick={handleClick} color='pink'/>
+      <Button label={9} onClick={handleClick} color='pink'/>
+    </div>
+
+    {/* Operator Buttons */}
+    <div className="flex flex-col gap-3">
+      <Button label={"+"} onClick={handleClick} color='lightPink'/>
+      <Button label={"-"} onClick={handleClick} color='lightPink'/>
+      <Button label={"%"} onClick={handleClick} color='lightPink'/>
+      <Button label={"*"} onClick={handleClick} color='lightPink'/>
+      <Button label={"/"} onClick={handleClick} color='lightPink'/>
+      <Button label={"."} onClick={handleClick} color='lightPink'/>
+    </div>
+
+    {/* Reset and equals buttons */}
+    <div className="flex flex-col gap-3">
+        <Button label={"="} onClick={handleClick} color='lightPink'/>
+        <Button label={"C"} onClick={handleClick} color='lightPink'/>
+    </div>
+
+  </div>
+</section>
   );
 }

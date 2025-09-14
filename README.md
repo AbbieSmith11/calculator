@@ -20,7 +20,6 @@ It supports basic arithmetic operations with a responsive and clean design.
 - [TypeScript](https://www.typescriptlang.org/)  
 - [Vite](https://vitejs.dev/)  
 - [Tailwind CSS](https://tailwindcss.com/)  
-- [React DOM](https://react.dev/reference/react-dom)  
 
 ---
 

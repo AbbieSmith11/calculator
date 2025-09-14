@@ -1,12 +1,10 @@
-import './App.css';
-import Calculator from './components/calculator/Calculator.tsx';
+import "./App.css";
+import Calculator from "./components/Calculator.tsx";
 
 export default function App() {
-  
-
   return (
     <>
-    <Calculator/>
+      <Calculator />
     </>
-  )
-};
+  );
+}

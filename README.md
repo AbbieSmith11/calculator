@@ -1,11 +1,11 @@
-# Calculator App
+# ➕ Calculator App
 
 A simple calculator built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.  
 It supports basic arithmetic operations with a responsive and clean design.
 
 ---
 
-## Features
+## ✨ Features
 
 - Addition, subtraction, multiplication, division and modulo  
 - Decimal support  
@@ -14,7 +14,7 @@ It supports basic arithmetic operations with a responsive and clean design.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - [React](https://react.dev/)  
 - [TypeScript](https://www.typescriptlang.org/)  
@@ -23,7 +23,7 @@ It supports basic arithmetic operations with a responsive and clean design.
 
 ---
 
-## Installation
+## 👩‍💻 Installation
 
 Clone the repo and install dependencies:
 
